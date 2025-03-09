@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Holi Defense</title>
+
+  <!-- Meta tags for SEO, decoration and social sharing -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- above in content add "viewport-fit=cover" but there's a catch so do a resarch before adding -->
+
+  <!-- Meta tags for SEO -->
+  <meta name="description" content="" />
+  <meta name="robots" content="index,follow" />
+  <!-- <meta name="theme-color" media="(prefers-color-scheme: light)" content="white"> -->
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="black">
+  
+  <!-- social metas -->
+  <meta property="og:title" content="" />
+  <meta property="og:description" content="" />
+  <meta property="og:image" content="./assets/maze-512.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="" />
+
+  <!-- twitter metas -->
+  <meta property="twitter:title" content="" />
+  <meta property="twitter:description" content="" />
+  <meta property="twitter:image" content="./assets/maze-512.png" />
+  <meta property="twitter:card" content="summary_large_image">
+  <!-- meta finish -->
+
+  <link rel="canonical" href="" />
+  <link rel="icon" href="" />
+
+  <!-- pwa manifest linking -->
+  <!-- <link rel="manifest" href="/app.webmanifest"> -->
+  <link rel="apple-touch-icon" href="./assets/icon-512.png">
+  <!-- pwa manifest over -->
+
+
+  <script src="https://cdn.jsdelivr.net/gh/0-harshit-0/Utility-HTML5Canvas@master/utility.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" media="screen" href="./style.css">
+  <!-- <script type="text/javascript" src="./script.bundle.js" defer></script> -->
+  <script type="text/javascript" src="./main.bundle.js" defer></script>
+  <!-- <script type="text/javascript" src="./ballons.bundle.js" defer></script> -->
+</head>
+<body>
+  
+  <header class="">
+    <div id="frame" style="width: 100%;"><iframe data-aa="2384769" src="//acceptable.a-ads.com/2384769?size=Adaptive&background_color=000000" style="border:0px; padding:0; width:100%; height:100%; overflow:hidden; background-color: transparent;"></iframe><a style="display: block; text-align: right; font-size: 12px" id="frame-link" href="https://aads.com/?partner=2384769">Advertise here</a></div>
+    <!-- <nav>display-none
+      <a href=""></a>
+    </nav> -->
+  </header>
+
+	<main class="wrap">
+    <!-- Droplet / Splash canvas -->
+    <canvas id="canvas"></canvas>
+    <!-- Balloon canvas (note the id change for clarity) -->
+    <canvas id="balloon-canvas"></canvas>
+    <!-- Score and leaderboard container -->
+    <div id="score-container">
+      <div id="scoreboard">Score: 0</div>
+      <div id="leaderboard"></div>
+    </div>
+  </main>
+
+  <footer class="display-none"></footer>
+    
+</body>
+</html>

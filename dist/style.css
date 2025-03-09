@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* width */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+
+:root {
+    font-family: "sometype", cursive;
+    font-style: normal;
+    line-height: 1.3;
+    font-weight: 300;
+
+    color-scheme: light dark;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    --color-dark: #1D1D1D;
+    --color-light: #EAEAEA;
+    --color-mid: #7E7E7E;
+    --responsive-container-px: 2rem;
+
+    scroll-behavior: smooth;
+
+    filter: brightness(100%);
+}
+
+::selection {
+    color: white;
+    background: grey;
+}
+
+*,
+*::before,
+*::after {
+    scroll-behavior: inherit;
+    box-sizing: border-box;
+    margin: 0;
+
+}
+
+html,
+body {
+    block-size: 100vh;
+    font-size: clamp(1rem, 1.1vw + 1vh, 2rem);
+
+}
+
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-inline-size: 100%;
+    object-fit: cover;
+    block-size: auto;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.2;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+canvas {
+    -webkit-transform3d: translate(0, 0, 0);
+    -moz-transform3d: translate(0, 0, 0);
+    transform3d: translate(0, 0, 0);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    inline-size: 100%;
+    block-size: 100%;
+    /* z-index: -1; */
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+#root,
+#__next {
+    isolation: isolate;
+}
+
+.display-none {
+    display: none;
+}
+
+
+.wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* Ensure both canvases cover the entire screen */
+    width: 100%;
+    height: 100%;
+}
+
+#score-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#scoreboard {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+#leaderboard {
+    font-size: 14px;
+    white-space: pre-wrap;
+}
